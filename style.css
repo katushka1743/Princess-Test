@@ -1,0 +1,80 @@
+:root { /* Создание переменной */
+    --el: 0;
+}
+
+.def {
+    overflow: hidden;
+    width: 300px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: 1s;
+    transform: translateX(var(--el)); /* Смещение по оси Х через переменную */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    position: relative;
+    top: -175px;
+    opacity: 0;
+}
+
+.carousel:hover~.buttons {
+    opacity: 0.5;
+}
+
+.buttons:hover {
+    opacity: 0.5;
+}
+
+fieldset {
+    line-height: normal;
+    margin: 20px;
+}
+
+button {
+    margin: 20px;
+}
+
+.check {
+    transition: 1s;
+}
+
+.check:invalid {
+    border-color: red;
+}
+
+.check:valid {
+    border-color: green;
+}
+
+.cogr {
+    color: green;
+    font-size: 50px;
+}
+
+.almcogr {
+    color: yellow;
+    font-size: 50px;
+}
+
+.notcogr {
+    color: red;
+    font-size: 50px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="wrapper">
+            <div class="carousel">
+                <div class="def">
+
+                    <form class="form1" name="form1" novalidate>
+
+                        <fieldset class="fieldset1">
+                            <legend for="login">Введите имя (Русские буквы, первая буква заглавная): </legend>
+                            <input type="text" name="login" id="login" pattern="[А-Я][а-я]+" class="check" required>
+                            <label for="login"></label>
+                        </fieldset>
+
+                        <fieldset class="fieldset2">
+                            <legend for="date">Введите дату рождения с 1904 года до 2024 года (число и месяц до 05.10):</legend>
+                            <input class="check" type="date" name="date" id="date" min="1904-10-05" max="2024-10-05" required>
+                            <label for="date"></label>
+                        </fieldset>
+
+                        <fieldset class="fieldset3">
+                            <legend for="gender">Выберите ваш гендер:</legend>
+                            <input type="radio" name="gender" value="Мужской" checked="checked">Мужской
+                            <input type="radio" name="gender" value="Женский">Женский
+                        </fieldset>
+
+                        <button type="submit">Вперёд</button>
+
+                    </form>
+
+                </div> 
+
+
+
+                <div class="def">
+                    <h3>Тест на знания принцесс</h3>
+
+                    <form class="form2" name="form2" novalidate>
+                        
+                        <fieldset class="fieldset_name_Aurora">
+                            <legend>Напишите правильно имя Спящей Красавицы (С большой буквы): </legend>
+                            <input type="text" name="name_pr" id="name_pr" pattern="Аврора" required autocomplete="off"> 
+                        </fieldset>
+
+                        <fieldset class="fieldset_what_eat">
+                            <legend>Что съела Белоснежка?</legend>
+                            <input type="text" name="what_eat" id="what_eat" pattern="[Яя]блоко" required autocomplete="off"> 
+                        </fieldset>
+
+                        <fieldset class="fieldset_what_animal">
+                            <legend>Какое животное у Жасмин?</legend>
+                            <input type="text" name="what_animal" id="what_animal" pattern="[Тт]игр" required autocomplete="off"> 
+                        </fieldset>
+
+                        <fieldset class="fieldset_name_Pascal">
+                            <legend>Как зовут хамелеона Рапунцель?</legend>
+                            <input type="radio" name="chameleon" value="0" checked>Симба
+                            <input type="radio" name="chameleon" value="1">Паскаль
+                            <input type="radio" name="chameleon" value="0">Себастьян
+                        </fieldset>
+
+                        <fieldset class="fieldset_name_Melody">
+                            <legend>Как зовут дочку Ариэль?</legend>
+                            <input type="radio" name="daughter" value="0" checked>Райли
+                            <input type="radio" name="daughter" value="0">Ванилопа
+                            <input type="radio" name="daughter" value="1">Мелоди
+                        </fieldset>
+
+                        <fieldset class="fieldset_name_Eugene">
+                            <legend>Какое имя настоящее?</legend>
+                            <input type="radio" name="men" value="0" checked>Флин Райдер
+                            <input type="radio" name="men" value="1">Юджин Фитцерберт
+                        </fieldset>
+
+                        <button type="submit" id="go">Проверить</button>
+                        
+
+                    </form>
+                <button id="btnBack1">Назад</button>
+                </div>
+
+
+                <div class="def">
+                    <h1>Результаты: </h1>
+                    <form class="form3" name="form3">
+                        <h4>Имя, возраст, пол:</h4>
+                        <div id="res1">
+                            
+                            <!--<input type="text" name="r1" id="">
+                            <label for="r1"></label> -->
+                        </div>
+                        <h4>Правильных ответов:</h4>
+                        <div id="res2">
+                            <!--<input type="text" name="r2" id="">
+                            <label for="r2"></label> -->
+                        </div>
+                        <button id="btnBack2">Повторить</button>
+                        
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
